@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+f#!/usr/bin/env python3
 """
 HYBRID RAG + SEMANTIC PATTERNS - FIXED SMART RETRIEVAL
 Restores intelligent Kanda selection instead of always using supplementary file
@@ -281,7 +281,7 @@ class SmartRAGClassifier:
             raise ImportError("Groq library required")
         
         # Initialize Groq
-        self.api_key = api_key or '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'
+        self.api_key = api_key
         self.client = Groq(api_key=self.api_key)
         self.model_name = model_name
         
